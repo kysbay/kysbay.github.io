@@ -1,1 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "pacifio";
+    src: url("assets/fonts/Pacifico/Pacifico-Regular.ttf");
+}
+
+
+.navbar-brand{
+    font-family: 'pacifio';
+}
+
+.xl-text{
+    font-size: 65px;
+}
+.m-text{
+    font-size: 50px;
+}
+
+.main-section{
+    height: calc(100vh - 150px);
+}
+
+.fs-xsm{
+    font-size: 12px;
+}
+
+.fs-sm{
+    font-size: 16px;
+}
+
+.full-height{
+    height: calc(100vh - 90px);
+}
+
+#main {
+    height: calc(100vh - 500px) !important;
+}
+
+@media (max-width: 560px){
+    .my-7{
+        margin: .15 * 5rem auto !important;
+    }
+    .mb-5{
+        margin: auto auto .15 * 3rem auto !important;
+    }
+    .py-7{
+        padding: .15 * 5rem auto !important;
+    }
+}
