@@ -1,0 +1,83 @@
+
+$font-family: "Poppins";
+
+$font-family-sans-serif: $font-family, sans-serif !important;
+$font-family-base: $font-family,  sans-serif !important;
+$headings-font-family: $font-family, sans-serif !important;
+
+$primary:  #3D63EA; // rgb(64, 0, 255);
+$light: #F9F9FF;
+$shadow-color: rgba(0,0,0,.15);
+
+// // Navbar
+$navbar-brand-font-size: 1rem * 2;
+$navbar-light-hover-color: $primary;
+$navbar-nav-link-padding-x: .8rem;
+$navbar-padding-y: 1rem;
+$navbar-light-color: #4A5568 !important;
+
+
+// Spacers
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 6,
+  7: $spacer * 8,
+  8: $spacer * 12,
+) !default;
+
+$line-height-base: 1.7;
+$headings-margin-bottom: $spacer * 1 !default;
+$headings-font-weight: bold;
+
+
+
+// Buttons
+$button-radius:  0.3125rem !important;
+$button-padding-x: 0px !important;
+$button-padding-y: 0px !important;
+$button-shadow: 0px 4px 49px 0px $shadow-color;
+
+
+
+$btn-border-radius: $button-radius;
+$btn-border-radius-sm: $button-radius;
+$btn-border-radius-lg: $button-radius;
+$btn-font-size:  0.875rem !important;
+
+$enable-negative-margins: true;
+
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn, .btn.btn-lg, .btn.btn-sm{
+  box-shadow: $button-shadow !important;
+}
+
+.btn.special-btn{
+  background: linear-gradient(225deg, #6675F7 0%, #57007B 100%) !important;
+}
+
+.text-special{
+  background: linear-gradient(225deg, #6675F7 0%, #57007B 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+.ellipse{
+  width: 4.5rem;
+  height: 4.5rem;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--gradient-primary-bg, linear-gradient(225deg, #F76680 0%, #57007B 100%));
+}
+
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
