@@ -1,0 +1,23 @@
+<!-- Cards section -->
+<div class="mt-5 bg-light pb-5 z-1">
+  <div class="container py-6">
+    <div class="d-flex flex-column align-items-center col-md-8 m-auto">
+      <h3 class="display-6">Services We Offer</h3>
+      <p class="lead mt-3 text-center">From full-stack development to augmented teams, our experienced engineers assist you in creating scalable, reliable software and applications.</p>
+    </div>
+    <!-- Cards -->
+    <div class="row mt-3">
+      <div class="col-md-4 mt-3" *ngFor="let record of data$ | async">
+        <div class="card shadow border-0 h-100 text-center">
+          <div class="card-image">
+            <div class="{{record.iconClass}} fa-3x mt-5 text-special"></div>
+          </div>
+          <div class="card-body mt-4 px-4">
+            <h4 class="card-title mb-4">{{record.title}}</h4>
+            <p class="lead text-black-50 fs-6">{{record.body}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
